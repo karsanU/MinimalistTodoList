@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>TODO App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="./styles.css" />
+</head>
+
+<body>
+
+
+
+  <!-- Container ==> hold the contents of the todoList-->
+  <div class="container center">
+
+    <!-- Header-->
+    <div id="header">
+      <h1 class="center title">Todo List</h1>
+      <div class="flow-right controls">
+        <span>Item count: <span id="item-count">0</span></span>
+        <span>Unchecked count: <span id="unchecked-count">0</span></span>
+       </div>
+       <h2 id="todaysDate">0</h2>
+    </div>
+
+    <!-- Body of the container-->
+    <div id="rest">
+
+      <ul id="todo-list" class="todo-list">
+      </ul>
+
+      <div id="submitTodo">
+        <input id="inputFormData" maxlength="32"  placeholder="new todo" name="todo" type="text"></input>
+        <img src ="img/add.png" id = "addImg" class="button center" onClick="newTodo()"> </img>
+      </div>
+    </div>
+
+
+
+  </div>
+  <script src="./script.js"></script>
+</body>
+
+</html>
